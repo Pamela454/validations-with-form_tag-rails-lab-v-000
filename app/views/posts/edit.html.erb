@@ -11,6 +11,7 @@
 </div>
 <% end %>
 
+<% if @post.errors[:name].empty? %>
   <div class="field">
     <%= label_tag "title", "Title" %>
     <%= text_field_tag "title", @post.title %>
